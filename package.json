@@ -1,0 +1,27 @@
+{
+  "name": "mocha-notifier-reporter",
+  "version": "0.1.0",
+  "description": "Show notification with other Mocha reporters",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hakovala/mocha-notifier-reporter.git"
+  },
+  "keywords": [
+    "mocha",
+    "reporter",
+    "notification",
+    "notify",
+    "notifier"
+  ],
+  "author": "Harri Kovalainen <hakovala@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hakovala/mocha-notifier-reporter/issues"
+  },
+  "homepage": "https://github.com/hakovala/mocha-notifier-reporter",
+  "dependencies": {
+    "node-notifier": "^3.4.1",
+    "printf": "^0.2.0"
+  }
+}
