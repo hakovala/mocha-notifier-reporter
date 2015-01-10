@@ -33,7 +33,7 @@ function notify(stats, runner) {
 
 // hacky way of getting the other reporter.. :P
 function getReporter(reporter) {
-	var temp = {};
+	var temp = {options:{}};
 	Mocha.prototype.reporter.call(temp, reporter);
 	return temp._reporter;
 }
