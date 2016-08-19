@@ -61,9 +61,9 @@ NotifyReporter.message_fail = '%(failures)d of %(total)d tests failed';
 
 // Tries to decorate other reporter with notifications
 // Borrows Mochas reporter method
-NotifyReporter.decorate = function(reporter) {
+NotifyReporter.decorate = function(name) {
 	return function(runner) {
-		reporter = new (getReporter(reporter))(runner);
+		var reporter = new (getReporter(name))(runner);
 		runner.on('end', function() {
 			notify(reporter.stats, runner);
 		});
