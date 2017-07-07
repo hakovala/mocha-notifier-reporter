@@ -2,8 +2,8 @@ mocha-notifier-reporter
 =======================
 
 `mocha-notifier-reporter` is a reporter that shows notification using [node-notifier](https://github.com/mikaelbr/node-notifier) with customizable values.
-Default notification is similar to [Mocha](http://visionmedia.github.io/mocha/) growl option.
-It can also add notifications to other [Mocha](http://visionmedia.github.io/mocha/) reporters.
+Default notification is similar to [Mocha](http://mochajs.org/) growl option.
+It can also add notifications to other [Mocha](http://mochajs.org/) reporters.
 
 Installation
 ------------
@@ -31,7 +31,7 @@ gulp.task('test-notify-only', function() {
 Use `decorate` method to use other reporter at the same time.
 `decorate` takes same argument as Mocha for reporter property.
 
-See [here](http://visionmedia.github.io/mocha/#reporters) for other possible reporters.
+See [here](http://mochajs.org/#reporters) for other possible reporters.
 
 ```js
 var gulp = require('gulp');
